@@ -2,7 +2,9 @@ package com.learn.java.java8;
 
 import java.util.function.BiFunction;
 
-public class Java8Features {
+import com.learn.java.java17.Car;
+
+public class FunctionalInterfaceAndLambdaExpressions {
 
     public static void saySomething() {
         System.out.println("Hello, this is static method.");
@@ -19,13 +21,13 @@ public class Java8Features {
         printable.apply(10, 20);
 
         // Referring static method
-        BiFunction<Integer, Integer, Integer> adder = Java8Features::add;
+        BiFunction<Integer, Integer, Integer> adder = FunctionalInterfaceAndLambdaExpressions::add;
         // Calling interface method
         int result = adder.apply(10, 20);
         System.out.println("Result -> " + result);
 
         // Referring static method
-        Sayable sayable = Java8Features::saySomething;
+        Sayable sayable = FunctionalInterfaceAndLambdaExpressions::saySomething;
         // Calling interface method
         sayable.say();
 

@@ -1,6 +1,9 @@
-package com.learn.java.java8;
+package com.learn.java.java17;
 
-public class Car implements Vehicle, FourWheeler{
+import com.learn.java.java8.FourWheeler;
+import com.learn.java.java8.Vehicle;
+
+public final class Car implements Vehicle, FourWheeler {
 
     /**
      * This method has to be overridden to resolve
